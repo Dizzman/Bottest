@@ -1,4 +1,16 @@
 <context>
+    <input pattern="привет">
+        <output>
+            <item value="Приветствую"/>
+        </output>
+    </input>
+
+    <input pattern="* привет * здорова* Hi * Hello *">
+        <output>
+            <item value="Приветствую"/>
+        </output>
+    </input>
+
     <input pattern="* как * дел* *">
         <output>
             <item value="да вроде ничего"/>
