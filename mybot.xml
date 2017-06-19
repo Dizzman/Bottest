@@ -3,6 +3,11 @@
      <input pattern="/start">
     <output value="Але!  Я внимательно вас слушаю. Чем могу быть полезна"/>
     <context>
+        
+        <input pattern="*">
+        <output>
+            <item value="ничего не поняля"/>
+            </output>
     <input pattern="* как * дел* *">
         <output>
             <item value="да вроде ничего"/>
