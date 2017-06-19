@@ -2,6 +2,7 @@
     
      <input pattern="/start">
     <output value="Але!  Я внимательно вас слушаю. Чем могу быть полезна"/>
+    </input>
     <input pattern="* как * дел* *">
         <output>
             <item value="да вроде ничего"/>
