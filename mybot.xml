@@ -1,42 +1,84 @@
 <context>
-    <input pattern="[* напомни * [мне]] { [[to] $Text] [$Date] [$Time] }">
-        <!-- Jump to the reminder creation if Text and Time have been provided -->
-        <context id="reminder" if="full($Text) and full($Time)"/>
+    <input pattern="* как * дел* *">
+        <output>
+            <item value="да вроде ничего"/>
+            <item value="лучше всех"/>
+        </output>
+    </input>
 
-        <!-- Ask for reminder text if it was not provided -->
-        <context if="empty($Text)" modal="true"> <!-- This context is modal because any text must be interpreted as reminder text -->
-            <output value="О чем я должна вам напомнить?"/>
+    <input pattern=" * {ты кто} *">
+        <output value="Я Ваш личный голосовой ассистент"/>
+    </input>
 
-            <input pattern="$Text">
-                <context id="reminder_time" if="empty($Time)"/> <!-- Ask for the Date and Time -->
-                <context id="reminder"/> <!-- Or create a reminder if the Time was provided -->
-            </input>
-        </context>
+    <input>
+        <pattern value="* как ([твое] (самочувствие|здоровье)|поживаешь|[твои|[у] тебя] дела) *"/>
+        <pattern value="* как ты [себя] чувствуешь *"/>
 
-        <!-- Ask for the Time if it was not provided -->
-        <context id="reminder_time" if="empty($Time)">
-            <!-- The user may provide both Date and Time -->
-            <output value="Когда я должна вам напомнить?" if="empty($Date)"/>
+        <output>
+            <item value="Хорошо"/>
+            <item value="Отлично"/>
+            <item value="Нормально"/>
+            <item value="Неплохо"/>
+            <item value="Бывало и получше"/>
+            <item value="Да вроде ничего"/>
+            <item value="Как обычно хорошо"/>
+            <item value="Лучше всех"/>
+        </output>
+    </input>
 
-            <!-- Or ask only for the Time if the Date was provided -->
-            <output value="Скажите время в которое вам напомнить? "/>
+    <input pattern="* молодец *">
+        <output value="Спасибо"/>
+    </input>
 
-            <input>
-                <pattern value="* {(* $Time) [$Date]} *"/>
-                <pattern value="* $Date *"/>
+    <input pattern="* спасибо *">
+        <pattern value="Всегда пожалуйста"/>
+    </input>
 
-                <context id="reminder_time" if="empty($Time)"/> <!-- Ask for Time -->
-                <context id="reminder"/> <!-- Or create a reminder -->
-            </input>
-        </context>
+    <input pattern="* (что * делаешь|чем * занимаешься) *">
+        <output>
+            <item value="Работаю"/>
+            <item value="Слушаю вас"/>
+            <item value="Выполняю ваши просьбы"/>
+        </output>
+    </input>
 
-        <!-- This context contains no inputs, it only contains actions -->
-        <context id="reminder">
-            <!-- Format date string if it is not empty -->
-            <var name="Fmt" value='fmt($Date, "EEEE, MMMM dd", $req_lang)' if="full($Date)"/>
+    <input pattern="* {сколько тебе (лет|год*)} *">
+        <output value="Задавайте вопросы по существу"/>
+    </input>
 
-            <!-- Just response with text, date and time of a new reminder -->
-            <output value='Хорошо, я напомню о "$Text" в $Fmt в $Time'/>
-        </context>
+    <input pattern="удалить *">
+        <output value="Нечего удалять"/>
+    </input>
+
+    <input pattern="repeat(дуся)">
+        <output value="Привет"/>
+    </input>
+
+    <input pattern="* (люся|люси) *">
+        <output>
+            <item value="Не Люся, а Дуся"/>
+            <item value="Дуся, а не Люся"/>
+            <item value="Какая еще Люся?"/>
+            <item value="Зачем вам Люся, когда есть Дуся"/>
+        </output>
+    </input>
+
+    <input pattern="слышишь">
+        <output value="Слышу слышу"/>
+    </input>
+
+    <input pattern="* что нового *">
+        <output value="Да всё как всегда"/>
+    </input>
+
+    <input pattern="* ты * (дура*|тупая|тупой|дебил*) *">
+        <output>
+            <item value="Без комментариев"/>
+            <item value="Задавайте вопросы по существу"/>
+        </output>
+    </input>
+
+    <input pattern="* (установ*|*качать*) * скрипт* *">
+        <output value="Зайдите в список функций, Скрипты и найдите нужный скрипт"/>
     </input>
 </context>
