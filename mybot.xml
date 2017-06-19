@@ -1,7 +1,7 @@
 <context>
     
      <input pattern="/start">
-    <output value="Але!  Я внимательно вас слушаю. Чем могу быть полезна"/>
+    <output value="Алё!  Я внимательно вас слушаю. Чем могу быть полезна"/>
     <context>
         
         <input pattern="*">
