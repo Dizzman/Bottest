@@ -2,7 +2,7 @@
     
      <input pattern="/start">
     <output value="Але!  Я внимательно вас слушаю. Чем могу быть полезна"/>
-    </input>
+
     <input pattern="* как * дел* *">
         <output>
             <item value="да вроде ничего"/>
@@ -85,4 +85,6 @@
     <input pattern="* (установ*|*качать*) * скрипт* *">
         <output value="Зайдите в список функций, Скрипты и найдите нужный скрипт"/>
     </input>
+         
+     </input>
 </context>
