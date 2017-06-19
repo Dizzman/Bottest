@@ -8,6 +8,7 @@
         <output>
             <item value="ничего не поняля"/>
             </output>
+            </input>
     <input pattern="* как * дел* *">
         <output>
             <item value="да вроде ничего"/>
