@@ -4,21 +4,13 @@
        <output value="Привет! Ты ведь из Бизнес Квартиры"/>
          
 
-        <!-- Or activate an inner context to ask the user about his/her name -->
-        <context if="empty($UserName)" modal="true"> <!-- We use a modal context, so our bot will recognize any text as the user’s name -->
-            <output value="как тебя зовут?"/>
-            <input pattern="$Text">
-                <!-- Store the user’s name in the UserName variable with "user" scope to save it into database -->
-                <var name="UserName" value="$Text" scope="user"/>
-                <output value="Приятно познакомиться, $UserName!"/> <!-- Using the placeholder in output -->
-            </input>
-        
         <input pattern="*">
         <output>
             <item value="ничего не поняля"/>
-            </output>
-            </input>
-    <input pattern="* как * дел* *">
+        </output>
+        </input>
+
+   <input pattern="* как * дел* *">
         <output>
             <item value="да вроде ничего"/>
             <item value="лучше всех"/>
