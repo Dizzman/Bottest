@@ -1,6 +1,6 @@
 <context>
     
-     <input pattern="/start>
+     <input pattern="/start">
       <context>
                      
        <output value="Привет! Ты ведь из Бизнес Квартиры?"/>
