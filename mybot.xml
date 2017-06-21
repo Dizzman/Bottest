@@ -6,9 +6,9 @@
        <output value="Привет! Ты ведь из Бизнес Квартиры?"/>
         
          <input pattern="(да|конечно) *">
-        <context>
+       
          <output value ="Замечательно"/>
-        </context>
+       
                 </input>
                 <input pattern="*">
         <output>
