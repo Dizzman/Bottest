@@ -6,10 +6,10 @@
        <output value="Привет! Ты ведь из Бизнес Квартиры?"/>
         
          <input pattern="(да|конечно) *">
-       
+         <context>
          <output value ="Замечательно"/>
-       
-                </input>
+             </context>
+             </input>
                 <input pattern="*">
         <output>
             <item value="ничего не поняля"/>
