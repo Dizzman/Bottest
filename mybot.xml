@@ -10,7 +10,13 @@
          <output value ="Замечательно"/>
          </context>
          </input>
-         </output>        
+
+                    <input pattern="(да|конечно) *">
+<context>
+    <output value ="ggg"/>
+                        </context>
+           </input>
+          </output>        
    <input pattern="*">
         <output>
             <item value="ничего не поняла"/>
