@@ -1,9 +1,12 @@
 <context>
     
      <input pattern="/start">
-       <output value="Привет! Ты ведь из Бизнес Квартиры"/>
-         
-       <context>
+       <output value="Привет! Ты ведь из Бизнес Квартиры?"/>
+        <input pattern="(да|конечно) *">
+            <context>
+            <output value ="Замечательно"/>
+            </context>
+            <context>
         <input pattern="*">
         <output>
             <item value="ничего не поняля"/>
