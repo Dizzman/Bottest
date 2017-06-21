@@ -3,7 +3,7 @@
      <input pattern="/start">
        <output value="Привет! Ты ведь из Бизнес Квартиры"/>
          
-
+       <context>
         <input pattern="*">
         <output>
             <item value="ничего не поняля"/>
@@ -94,4 +94,5 @@
     </input>
        
    </input>
+         </context>
 </context>
