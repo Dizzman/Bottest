@@ -3,14 +3,14 @@
      <input pattern="/start">
       <context>
                      
-       <output value="Привет! Ты ведь из Бизнес Квартиры?"/>
+       <output value="Привет! Ты ведь из Бизнес Квартиры?">
         
          <input pattern="(да|конечно) *">
          <context>
          <output value ="Замечательно"/>
          </context>
          </input>
-        
+          </output>        
    <input pattern="*">
         <output>
             <item value="ничего не поняла"/>
