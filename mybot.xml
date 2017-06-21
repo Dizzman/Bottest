@@ -10,11 +10,7 @@
          <output value ="Замечательно"/>
          </context>
          </input>
-        <input pattern="(нет|незнаю)"/>
-        <context>           
-         <output value ="Всему свое время"/>
-         </context>
-        </input>
+        
    <input pattern="*">
         <output>
             <item value="ничего не поняла"/>
