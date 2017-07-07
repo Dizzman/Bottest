@@ -4,7 +4,7 @@
     
     <context> <!-- Go to the inner context to continue a conversation -->
    <input>
-        <pattern value="repeat([дуся|всем] (привет|здравствуй*) [дуся])"/>
+        <pattern value="repeat([Наталья| Наташа| всем] (привет|здравствуй*) [дуся])"/>
 
         <output>
             <item value="Привет"/>
@@ -18,7 +18,7 @@
     </input>
       
       <input pattern=" * {ты кто} *">
-         <output value="Я тестовый бот БК"/>
+         <output value="Я тестовый бот БК , мое имя Наталья"/>
      </input>
        <input>
         <pattern value="* как ([твое] (самочувствие|здоровье)|поживаешь|[твои|[у] тебя] дела) *"/>
@@ -64,13 +64,10 @@
         <output value="Привет"/>
     </input>
 
-    <input pattern="* (люся|люси) *">
+    <input pattern="* (Наташа) *">
         <output>
-            <item value="Не Люся, а Дуся"/>
-            <item value="Дуся, а не Люся"/>
-            <item value="Какая еще Люся?"/>
-            <item value="Зачем вам Люся, когда есть Дуся"/>
-        </output>
+            <item value="я не Наташа, я Наталья"/>
+           </output>
     </input>
 
     <input pattern="слышишь">
