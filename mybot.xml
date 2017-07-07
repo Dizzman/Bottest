@@ -1,36 +1,15 @@
 <context>
-    
-     <input pattern="/start">
-      <context>
-                     
-       <output value="Привет! Ты ведь из Бизнес Квартиры?">
-        
-         <input pattern="(да|конечно) *">
-         <context>
-         <output value ="Замечательно"/>
-         </context>
-         </input>
+    <input>
+        <pattern value="repeat([дуся|всем] (привет|здравствуй*) [дуся])"/>
 
-                    <input pattern="(да|конечно) *">
-<context>
-    <output value ="ggg"/>
-                        </context>
-           </input>
-          </output>        
-   <input pattern="*">
         <output>
-            <item value="ничего не поняла"/>
-        </output>
-        </input>
-
-   <input pattern="* как * дел* *">
-        <output>
-            <item value="да вроде ничего"/>
-            <item value="лучше всех"/>
+            <item value="Привет"/>
+            <item value="Привет привет"/>
+            <item value="Здравствуйте"/>
         </output>
     </input>
 
-        <input pattern=" * {ты кто} *">
+    <input pattern=" * {ты кто} *">
         <output value="Я Ваш личный голосовой ассистент"/>
     </input>
 
@@ -95,6 +74,16 @@
         <output value="Да всё как всегда"/>
     </input>
 
+    <input>
+        <pattern value="[* ты] молодец"/>
+        <pattern value="будь здоров*"/>
+        <output value="Спасибо"/>
+    </input>
+
+    <input pattern="* {спасибо [тебе] [дуся]}">
+        <output value="Всегда пожалуйста"/>
+    </input>
+
     <input pattern="* ты * (дура*|тупая|тупой|дебил*) *">
         <output>
             <item value="Без комментариев"/>
@@ -102,10 +91,7 @@
         </output>
     </input>
 
-    <input pattern="* (установ*|*качать*) * скрипт* *">
-        <output value="Зайдите в список функций, Скрипты и найдите нужный скрипт"/>
+    <input pattern="[[я] хочу | *кача*] (порн* | обои) *">
+        <output value="Это не входит в мои функции"/>
     </input>
-         </context>
-   </input>
-      
 </context>
