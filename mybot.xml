@@ -1,9 +1,7 @@
 <context>
 <input pattern="/start">
     <output value="Привет ты ведь из Бизнес Квартиры"/> <!-- User hears this prompt -->
-    
-     
-<context>
+        
     <input>
         <pattern value="repeat([дуся|всем] (привет|здравствуй*) [дуся])"/>
 
@@ -99,6 +97,5 @@
     <input pattern="[[я] хочу | *кача*] (порн* | обои) *">
         <output value="Это не входит в мои функции"/>
     </input>
-</context>
     </input>
 </context>
