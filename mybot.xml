@@ -1,8 +1,7 @@
 <context>
   <input pattern="/start">
     <output value="Привет   ---- ты ведь из бизне квартиры?"/> <!-- User hears this prompt -->
-    
-    <context> <!-- Go to the inner context to continue a conversation -->
+      <context> <!-- Go to the inner context to continue a conversation -->
    <input>
         <pattern value="repeat([Наталья| Наташа| всем] (привет|здравствуй*) [дуся])"/>
 
@@ -12,7 +11,10 @@
             <item value="Здравствуйте"/>
         </output>
     </input>
-      
+    
+    <input pattern="* хочу * *есть *">
+        <var name="command" value="ближайшее кафе"/>
+   </input>   
      
      <input pattern="Але|Алло|Ало">
         <output value="Але Але я тебя внимательно слушаю"/>
