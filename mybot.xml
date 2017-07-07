@@ -13,8 +13,22 @@
         </output>
     </input>
       
+      
+      
      <input pattern="*">
         <output value="Ничего не поняла, я еще очень глуппая, скажи что-то другое"/>
+    </input>
+      
+    <input pattern="что тебе сказать|рассказать|">
+        <output value="Расскажи, что для тебя счастье?"/>
+    </input>
+      
+     <input pattern="Говорю|я говорю|">
+        <output value="Ты молодец"/>
+    </input>
+      
+     <input pattern="глупая">
+        <output value="Я знаю, а ты?"/>
     </input>
       
       <input pattern=" * {ты кто} *">
