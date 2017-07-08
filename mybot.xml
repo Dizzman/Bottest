@@ -16,7 +16,7 @@
         <var name="command" value="ближайшее кафе"/>
    </input>   
         
-    <input pattern=" Время">
+    <input pattern="*Время">
         <output value="$Date"/>
    </input>   
         
