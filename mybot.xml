@@ -12,10 +12,7 @@
         </output>
     </input>
     
-    <input pattern="* хочу * *есть *">
-        <var name="command" value="ближайшее кафе"/>
-   </input>   
-        
+         
     <input pattern="*Время">
         <output value="ку "/>
    </input>   
