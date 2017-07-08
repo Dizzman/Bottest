@@ -17,8 +17,7 @@
         <output value="ку "/>
    </input>   
         
-        $Date
-     
+         
      <input pattern="Але|Алло|Ало">
         <output value="Але Але я тебя внимательно слушаю"/>
     </input>
