@@ -15,6 +15,12 @@
     <input pattern="* хочу * *есть *">
         <var name="command" value="ближайшее кафе"/>
    </input>   
+        
+    <input pattern=" Время">
+        <output value="$Date"/>
+   </input>   
+        
+        $Date
      
      <input pattern="Але|Алло|Ало">
         <output value="Але Але я тебя внимательно слушаю"/>
