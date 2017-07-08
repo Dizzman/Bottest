@@ -13,8 +13,8 @@
     </input>
     
          
-   <input pattern="* времени {* $Time}">
-        <output value="$Time"/>
+   <input pattern="$Text {* [$Time]}">
+        <output value="$Text $Time"/>
    </input>   
         
          
