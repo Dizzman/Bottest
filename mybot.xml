@@ -13,7 +13,7 @@
     </input>
     
          <input pattern="$Text">
-           <output value="$Text"/>
+           <output value="Что такое $Text скажи"/>
            </input>
 
         
