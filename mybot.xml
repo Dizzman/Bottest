@@ -13,9 +13,9 @@
     </input>
     
          <input pattern="$Text">
-           <output value ="$Text"/>
+           <output value="$Text $Time"/>
            </input>
-   <input pattern="ку {[$Time]}">
+   <input pattern="ку ">
         <output value=" $Time"/>
    </input>   
         
