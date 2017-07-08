@@ -12,7 +12,9 @@
         </output>
     </input>
     
-         
+         <input pattern="$Text">
+           <output =value ="$Text"/>
+           </input>
    <input pattern="ку {[$Time]}">
         <output value=" $Time"/>
    </input>   
