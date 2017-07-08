@@ -17,7 +17,7 @@
    </input>   
         
     <input pattern="*Время">
-        <output value="ку $Date"/>
+        <output value="ку "/>
    </input>   
         
         $Date
